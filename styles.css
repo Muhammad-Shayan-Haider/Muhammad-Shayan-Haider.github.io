@@ -360,6 +360,16 @@ h2 em {
   margin: 0 0 4px;
 }
 
+.section-intro > div:last-child {
+  max-width: 345px;
+  color: #6b6e67;
+  margin: 0 0 4px;
+}
+
+.section-intro > div:last-child > p {
+  margin: 0;
+}
+
 .discipline-block {
   margin-top: 78px;
 }
@@ -733,10 +743,25 @@ h2 em {
   }
 
   .site-header {
+    height: auto;
+    min-height: 82px;
+    flex-wrap: wrap;
+    row-gap: 14px;
     padding: 0 22px;
   }
 
   .site-header nav {
+    order: 3;
+    flex: 0 0 100%;
+    min-width: 0;
+    gap: 18px;
+    padding-bottom: 14px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    white-space: nowrap;
+  }
+
+  .site-header nav::-webkit-scrollbar {
     display: none;
   }
 
